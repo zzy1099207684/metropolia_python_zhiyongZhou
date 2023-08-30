@@ -40,17 +40,16 @@ print(f"average is {round(average, 3)}\n");
 talent = float(input("please input talent number: "));
 talentToKg = talent * 20 * 32 * 13.3 / 1000;
 talentToG = talent * 20 * 32 * 13.3;
-print(f"talent to kilograms is {round(talentToKg, 3)}KG, \ntalent to grams is {round(talentToG, 3)}G");
-
 pounds = float(input("please input pounds number: "));
 poundsToKg = pounds * 32 * 13.3 / 1000;
 poundsToG = pounds * 32 * 13.3;
-print(f"pounds to kilograms is {round(poundsToKg, 3)}KG, \npounds to grams is {round(poundsToG, 3)}G");
-
 lots = float(input("please input lots number: "));
 lotsToKg = lots * 13.3 / 1000;
 lotsToG = lots * 13.3;
-print(f"lots to kilograms is {round(lotsToKg, 3)}KG, \nlots to grams is {round(lotsToG, 3)}G\n");
+kg = talentToKg+poundsToKg+lotsToKg;
+int_kg = int(kg);
+g = (kg - int_kg) * 1000;
+print(f"The weight in modern units: {int_kg} kilograms and {round(g,3)} grams.\n");
 
 # Write a program that draws two random combinations of numbers for a combination lock:
 # a 3-digit code where each number is between 0 and 9.
