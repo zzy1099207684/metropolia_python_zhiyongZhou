@@ -46,21 +46,22 @@ poundsToG = pounds * 32 * 13.3;
 lots = float(input("please input lots number: "));
 lotsToKg = lots * 13.3 / 1000;
 lotsToG = lots * 13.3;
-kg = talentToKg+poundsToKg+lotsToKg;
+kg = talentToKg + poundsToKg + lotsToKg;
 int_kg = int(kg);
 g = (kg - int_kg) * 1000;
-print(f"The weight in modern units: {int_kg} kilograms and {round(g,3)} grams.\n");
+print(f"The weight in modern units: {int_kg} kilograms and {round(g, 3)} grams.\n");
 
 # Write a program that draws two random combinations of numbers for a combination lock:
 # a 3-digit code where each number is between 0 and 9.
 # a 4-digit code where each number is between 1 and 6.
 threeDigitList = [];
 fourDigitList = [];
-for i in range(0,3):
-    three_digit_code = random.randint(0,9)
+for i in range(0, 3):
+    three_digit_code = random.randint(0, 9);
     threeDigitList.append(three_digit_code);
-print(f"a 3-digit code is {threeDigitList}");
-for i in range(0,4):
-    four_digit_code = random.randint(1,6);
+print("a 3-digit code is", "".join(map(str, threeDigitList)));
+
+for i in range(0, 4):
+    four_digit_code = random.randint(1, 6);
     fourDigitList.append(four_digit_code)
-print(f"a 4-digit code is {fourDigitList}");
+print(f"a 4-digit code is", "".join(map(str, fourDigitList)));
