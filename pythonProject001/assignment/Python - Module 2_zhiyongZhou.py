@@ -54,10 +54,13 @@ print(f"The weight in modern units: {int_kg} kilograms and {round(g,3)} grams.\n
 # Write a program that draws two random combinations of numbers for a combination lock:
 # a 3-digit code where each number is between 0 and 9.
 # a 4-digit code where each number is between 1 and 6.
-listZeroToNine = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-listOneToSix = [1, 2, 3, 4, 5, 6];
-three_digit_code = random.sample(listZeroToNine, 3);
-print(f"a 3-digit code is {three_digit_code}");
-
-four_digit_code = random.sample(listOneToSix, 4);
-print(f"a 4-digit code is {four_digit_code}");
+threeDigitList = [];
+fourDigitList = [];
+for i in range(0,3):
+    three_digit_code = random.randint(0,9)
+    threeDigitList.append(three_digit_code);
+print(f"a 3-digit code is {threeDigitList}");
+for i in range(0,4):
+    four_digit_code = random.randint(1,6);
+    fourDigitList.append(four_digit_code)
+print(f"a 4-digit code is {fourDigitList}");
