@@ -34,18 +34,18 @@ gender = input("input your gender: (females/males)");
 hemoglobin = float(input("input your hemoglobin value(g/l): "));
 if (gender == "females"):
     if (hemoglobin < 117):
-        print("he hemoglobin value is low");
+        print("you hemoglobin value is low");
     elif (hemoglobin > 155):
-        print("he hemoglobin value is high");
+        print("you hemoglobin value is high");
     else:
-        print("he hemoglobin value is normal");
+        print("you hemoglobin value is normal");
 elif (gender == "males"):
     if (hemoglobin < 134):
-        print("he hemoglobin value is low");
+        print("you hemoglobin value is low");
     elif (hemoglobin > 167):
-        print("he hemoglobin value is high");
+        print("you hemoglobin value is high");
     else:
-        print("he hemoglobin value is normal");
+        print("you hemoglobin value is normal");
 
 # Write a program that asks the user to enter a year
 # and notifies the user whether the input year is a leap year.
