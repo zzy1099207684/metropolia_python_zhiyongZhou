@@ -1,7 +1,6 @@
 # 215x+710y=5
 import math
 
-
 def xunhuan(a, b, list3):
     list = [];
     list2 = [];
