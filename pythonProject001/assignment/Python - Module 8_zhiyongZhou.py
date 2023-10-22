@@ -5,7 +5,7 @@ from geopy import distance
 connection = mysql.connector.connect(
     host='127.0.0.1',
     port=3306,
-    database='metropolia',
+    database='flight_game',
     user='root',
     password='123456',
     autocommit=True
@@ -57,6 +57,8 @@ ICAO_code_second = input("input ICAO code secondly: ") + "'";
 sql = "select latitude_deg, longitude_deg, `name` from airport where ident = '";
 sql_first = sql + ICAO_code_first;
 sql_second = sql + ICAO_code_second;
+firstCountry = '';
+secondCountry = '';
 # default
 newport_ri = (0, 0);
 cleveland_oh = (0, 0);
