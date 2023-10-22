@@ -68,7 +68,7 @@ if (len(result_first) > 0):
 result_second = getSqlResult(sql_second);
 if (len(result_second) > 0):
     cleveland_oh = (result_second[0][0], result_second[0][1]);
-    secondCountry = result_first[0][2];
+    secondCountry = result_second[0][2];
 print(f"{firstCountry} and {secondCountry} of distance is ", distance.distance(newport_ri, cleveland_oh).kilometers, "km");
 
 
