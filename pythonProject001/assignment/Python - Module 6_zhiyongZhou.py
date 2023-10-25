@@ -84,7 +84,5 @@ secDiamiter = float(input("input second pizza diamiter: "));
 secPrice = float(input("input second pizza price: "));
 firstUnitPriceArea = getPizzaUnitPriceArea(firstDiamiter,firstPrice)
 secUnitPriceArea = getPizzaUnitPriceArea(secDiamiter,secPrice)
-print(firstUnitPriceArea)
-print(secUnitPriceArea)
 print("choose","first pizza" if firstUnitPriceArea > secUnitPriceArea else "second pizza")
 
