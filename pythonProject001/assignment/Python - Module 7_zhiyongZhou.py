@@ -2,9 +2,9 @@
 # (spring, summer, autumn, winter). Save the seasons as strings into a tuple in your program.
 # We can define each season to last three months, December being the first month of winter.
 winter = [12,1,2];
-spring = [1,2,3];
-summer = [4,5,6];
-autumn = [7,8,9];
+spring = [2,3,4];
+summer = [5,6,7];
+autumn = [8,9,10];
 month = int(input("input month number: "));
 if(month in winter): print("winter");
 elif(month in spring): print("spring");
