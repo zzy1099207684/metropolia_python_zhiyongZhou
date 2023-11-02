@@ -23,7 +23,7 @@ while(len(num.replace(" ","")) > 0):
 list.sort();
 list.reverse();
 if(len(list) > 0):
-    print(list);
+    print(list[:5]);
 else:
     print("NULL")
 
@@ -39,7 +39,7 @@ else:
     result = True;
     intNum = int(num)
     for i in range(intNum-1, 2, -1):
-        print(intNum,"  ",i)
+        # print(intNum,"  ",i)
         if(intNum % i == 0):
             result = False;
             break;
@@ -56,5 +56,5 @@ cities = [];
 for i in range(0,5,1):
     city = input(f"input city name of NO.{i}: ");
     cities.append(city);
-for i in range(len(cities)):
-    print(f"city name of NO.{i} is {cities[i]}")
+for index, city in enumerate(cities):
+    print(f"city name of NO.{index} is {city}")
