@@ -55,7 +55,7 @@ while(choose != '3' and len(choose.strip()) > 0):
 
     elif(choose == '1'):
         ICAD = input("input ICAD: ");
-        print(airports.get(ICAD));
+        print("airports name is: ",airports.get(ICAD),"\n");
     choose = input("1. fetch the information of airport;\n"
                    "2. new airport;\n"
                    "3. quit \n");
