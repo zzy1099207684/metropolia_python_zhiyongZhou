@@ -22,12 +22,12 @@ else:print("invalid");
 name = input("input name: ");
 sets = set();
 while(len(name) > 0):
-    name = input("input name: ");
     if (name in sets):
         print("Existing name");
     else:
         print("New name");
         sets.add(name);
+    name = input("input name: ");
 
 for i in sets:
     print(i);
