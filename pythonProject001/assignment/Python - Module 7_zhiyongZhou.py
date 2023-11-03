@@ -21,7 +21,7 @@ else:print("invalid");
 # Use the set data structure to store the names.
 name = input("input name: ");
 sets = set();
-while(len(name) > 0):
+while(len(name) > 0 and name != " "):
     if (name in sets):
         print("Existing name");
     else:
