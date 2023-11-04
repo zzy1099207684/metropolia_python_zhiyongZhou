@@ -38,7 +38,7 @@ if(num <= 1):
 else:
     result = True;
     intNum = int(num)
-    for i in range(intNum-1, 2, -1):
+    for i in range(intNum-1, 1, -1):
         # print(intNum,"  ",i)
         if(intNum % i == 0):
             result = False;
