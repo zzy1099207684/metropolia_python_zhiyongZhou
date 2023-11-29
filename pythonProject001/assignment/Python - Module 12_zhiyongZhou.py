@@ -18,7 +18,7 @@ else:
 # Take a good look at the API documentation. You must register for the service to receive the API key required for making API requests.
 # Furthermore, find out how you can convert Kelvin degrees into Celsius.
 municipalityName = input("input name of a municipality: ");
-appid = '54c740c16be729af0594cec1a230322b&units=metric';
+appid = '54c740c16be729af0594cec1a230322b';
 url = f'https://api.openweathermap.org/data/2.5/weather?q={municipalityName}&APPID={appid}&units=metric';
 response = requests.get(url);
 if response.status_code == 200:
